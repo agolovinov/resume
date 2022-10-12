@@ -1,72 +1,90 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Это тестовый сайт-резюме Алексея Головинова">
-    <meta name="keywords" content="html course, résumé, html, css">
-    <title>Резюме Алексея Головинова</title>
-</head>
-<body>
-    <h1>Алексей Головинов</h1>
-    <img src="AlexeyVanierTournage.jpg" alt="Моё фото" width="200">
-    <p>Мне 49 лет, я интересуюсь современными технологиями и изучаю <strong>HTML</strong> и <strong>CSS</strong>.</p> 
-    <p>Я хотел бы <em>научиться программировать и стать веб-разработчиком. Но на данном этапе, я ещё не определился что мне больше подойдёт: фронтенд или бэкенд разработка.</em></p> 
-    <p>Раньше я работал в <strong><em>туризме</em></strong>, разрабатывал и реализовывал туры, сопровождал <strong><em>иностранных туристов</em></strong> и много <em><strong>путешествовал</strong></em>.</p>
-    <h4>Список моих социальных сетей:</h4>
-    <a href="https://vk.com/wall-56109460?own=1">Вконтакте</a> 
-    |
-    <a href="https://telegram.org">Телега</a>
-    <h4>Мои хобби:</h4>
-    <ul>
-        <li>Путешествия</li>
-        <li>Фотография</li>
-        <li>Программирование</li>
-    </ul>
-    <h4>Опыт работы</h4>
-    <table>
-        <thead>
-            <tr>
-                <th>Название организации</th>
-                <th>Должность</th>
-                <th>Период работы</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>ОАО Интурист</td>
-                <td>Представитель в аэропорту</td>
-                <td>Июнь 1994-Сентябрь 1994</td>
-            </tr>
-            <tr>
-                <td>ОАО Интурист</td>
-                <td>Менеджер отдела обслуживания</td>
-                <td>Июнь 1995-Июль 2000</td>
-            </tr>
-            <tr>
-                <td>ООО Радиан-Тур</td>
-                <td>Менеджер</td>
-                <td>Июль 2000-Май 2022</td>
-            </tr>
-        </tbody>
-    </table>
-    <h4>Связаться со мной.</h4>
-    <form>
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Это тестовый сайт-резюме Алексея Головинова">
+        <meta name="keywords" content="html course, résumé, html, css">
+        <link rel="stylesheet" href="styles.css">
+        <title>Резюме Алексея Головинова</title>
+    </head>
+    <body>
+        <div class="container">
+            
+            <div class="info">
+                <img src="Моё фото.jpg" alt="Моё фото" class="avatar">
+                <div class="info-text">
+                    <h1>Алексей Головинов</h1>
+                    <p>Мне 49 лет, я интересуюсь современными технологиями и программированием.</p> 
+                    <p>Я хотел бы стать <em>веб-разработчиком</em>. Но на данном этапе, я ещё не определился что мне больше подойдёт - фронтенд или бэкенд разработка. А возможно иная отрасль IT-индустрии.</em></p> 
+                    <p>Раньше я работал в туризме и много путешествовал. Я разрабатывал и реализовывал туры, сопровождал иностранных туристов, продумывал логистику и организовывал экспедиции, съёмки фильмов и телепередач.</p>
+                    <h3>Список моих социальных сетей:</h3>
+                    <a href="https://vk.com/wall-56109460?own=1">Вконтакте</a> 
+                    |
+                    <a href="https://telegram.org">Телеграм</a>
+                </div>
+            </div>
+            <div class="card bg-green">
+                <h3>Мои хобби:</h3>
+                    <ol class="list">
+                        <li>Путешествия</li>
+                        <li>Фотография</li>
+                        <li>Программирование</li>
+                    </ol>
+            </div>
+            <div class="card bg-yellow">
+                <h3>Опыт работы</h3>
+                <table class="table">
+                    <!--<thead>
+                        <tr>
+                            <th>Название организации</th>
+                            <th>Должность</th>
+                            <th>Период работы</th>
+                        </tr>
+                    </thead> -->
+                    <tbody>
+                        <tr>
+                            <td>ОАО Интурист</td>
+                            <td>Представитель компании в аэропорту Иркутска</td>
+                            <td>Июнь 1994-Сентябрь 1994</td>
+                        </tr>
+                        <tr>
+                            <td>ОАО Интурист</td>
+                            <td>Менеджер отдела обслуживания гостиницы Интурист</td>
+                            <td>Июнь 1995-Июль 2000</td>
+                        </tr>
+                        <tr>
+                            <td>ООО Радиан-Тур</td>
+                            <td>Менеджер по въездному туризму</td>
+                            <td>Июль 2000-Май 2022</td>
+                        </tr>
+                        <tr>
+                            <td>Фриланс</td>
+                            <td>Логистика и проведение экспедиций и съёмок фильмов и телепередач</td>
+                            <td>С 1998 по настоящее время </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <form action="/" class="form">
+                <h3>Связаться со мной.</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="label" for="name">Ваше имя:</label>
+                        <input class="" type="text" id="name" placeholder="Введите имя">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Ваш E-mail:</label>
+                        <input type="email" id="email" placeholder="Введите E-mail">
+                    </div>
+                </div> 
+                <div class="form-group">
+                    <label for="message">Ваше сообщение</label>
+                    <textarea id="message" cols="30" rows="10" placeholder="Введите сообщение..."></textarea>
+                </div>
+                <input class="btn" type="submit" value="Отправить">
+            </form>    
         </div>
-        <div>
-            <label for="email">Ваш E-mail:</label>
-            <input type="email" id="email" placeholder="Введите E-mail">
-        </div>
-        <div>
-            <label for="message">Ваше сообщение</label>
-            <br>
-            <textarea id="message" cols="30" rows="10" placeholder="Введите сообщение..."></textarea>
-        </div>
-        <button type="submit">Отправить форму</button>
-    </form>
-</body>
+    </body>
 </html>
